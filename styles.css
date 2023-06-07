@@ -7,8 +7,9 @@ body{
 }
 
 
-nav.nav-header{
+/* nav.nav-header{
     width: 100%;
+    max-height: 70px;
     position: fixed;
     z-index: 100;
     background-color: #0091ff;
@@ -18,13 +19,27 @@ nav.nav-header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+} */
+
+nav.nav-header{
+    width: 100%;
+    max-height: 80px;
+    position: fixed;
+    z-index: 100;
+    background-color: #042959;
+   
+    text-align: center;
+    
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 70px;
 }
 
 nav.nav-header li{
     display: inline-block;
-    padding-left: 10px;
+    padding-left: 15px;
     user-select:none;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 
@@ -36,11 +51,13 @@ nav.nav-header li:hover{
 
 nav.nav-header ul{
     align-self: center;
-    color: black;
+    color: #80D2F2;
 }
 
 nav.nav-header a{
     text-decoration: none;
+    font-family: 'Bungee', cursive;
+    color: inherit;
 }
 
 nav.nav-header a:visited{
@@ -53,9 +70,9 @@ nav.nav-header a:hover{
 }
 
 .site-title{
-    color: rgb(62, 62, 62);
+    color: #80D2F2;
     align-self: center;
-    font-size: 35px;
+    font-size: 45px;
     font-weight: bolder;
     margin-bottom: 0px;
     margin-top: 0px;
@@ -65,6 +82,7 @@ nav.nav-header a:hover{
 .right-nav{
     padding-right: 30px;
     padding-left: 0px;
+    padding-top: 20px;
 }
 .discord-logo{
     width: 48px;
@@ -102,29 +120,6 @@ nav.nav-header a:hover{
     padding: auto;
     
 }
-.minigunner-info{
-    width: 75%;
-    margin:auto;
-    align-self: center;
-    text-align: center;
-    font-size: 30px;
-    max-width: 900px;
-}
-.minigunner-info h1{
-    color: #0091ff;
-    font-size: 60px;
-    font-family: 'Bungee Hairline', cursive;
-    padding: auto;
-    
-}
-
-
-.minigunner-info h2{
-    color: #0091ff;
-    font-size: 40px;
-    font-family: 'Bungee', cursive;
-    padding: auto;
-}
 
 
 
@@ -132,9 +127,11 @@ nav.nav-header a:hover{
 
 
 .capsule{
+    display: inline-block;
     width: 100%;
-    transform: translateY(-10%);
-    margin-bottom: -8%;
+    /* transform: translateY(-10%); */
+    /* margin-bottom: -8%; */
+    margin:auto;
 }
 
 #logoGif{
@@ -146,6 +143,63 @@ nav.nav-header a:hover{
     z-index: 2;
     /* align-self: center; */
     width: 45%;
+}
+
+.play-now{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #571FA6;
+    font-size: 40px;
+    font-family: 'Bungee', cursive;
+    border-radius: 25px;
+    background-color: #80D2F2;
+    margin: auto;
+    margin-top: 50px;
+    max-width: 15%;
+    /* min-width: 15%; */
+}
+.play-now a{
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+}
+.play-now a:visited{
+    text-decoration: none;
+    color:inherit;
+}
+
+.summary-box{
+    display: inline-block;
+    background-image: url("Images/StartMenuSplash1.png");
+
+    /* Set a specific height */
+    min-height: 1000px;
+    min-width: 285px;
+
+    /* Create the parallax scrolling effect */
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:auto;
+}
+
+.summary-box h1{
+    text-align: center;
+    color: #ffb300;
+    font-size: 80px;
+    font-family: 'Bungee', cursive;
+    text-shadow: -2px -2px 0px white;
+}
+.summary-box h2{
+    text-align: center;
+    color: #ffffff;
+    text-shadow: -2px -2px 0px rgb(0, 0, 0);
+    font-size: 30px;
+    font-family: 'Bungee', cursive;
+    max-width: 75%;
+    margin: auto;
 }
 
 .parallax-box{
@@ -162,7 +216,6 @@ nav.nav-header a:hover{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .info-section{
     /* background-color: rgba(186, 121, 0, 0.328); */
     /* width: 50%; */
@@ -170,7 +223,7 @@ nav.nav-header a:hover{
     margin-left: 5%;
     margin-right: 4%;
     width: 30%;
-    background-color: #0091ff1c;
+    /* background-color: #0091ff1c; */
     align-content: center;
 }
 
@@ -183,6 +236,7 @@ nav.nav-header a:hover{
 
 .info-section p{
     font-size: 25px;
+    text-shadow: -2px -2px 0px rgb(0, 0, 0);
 }
 #fightBox{
     background-image: url("Images/Fight_Screenshot_Gradient.jpg");
