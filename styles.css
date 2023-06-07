@@ -151,7 +151,7 @@ nav.nav-header a:hover{
 .parallax-box{
     /* The image used */
     margin: auto;
-    background-image: url("Images/FIGHT_Screenshot.jpg");
+    background-image: url("Images/Fight_Screenshot_Gradient.jpg");
 
     /* Set a specific height */
     min-height: 500px;
@@ -164,6 +164,41 @@ nav.nav-header a:hover{
 }
 
 .info-section{
-    background-color: rgb(186, 121, 0);
+    /* background-color: rgba(186, 121, 0, 0.328); */
+    /* width: 50%; */
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: 4%;
+    width: 30%;
+    background-color: #0091ff1c;
+    align-content: center;
 }
+
+.info-section h1{
+    color: #ffb300;
+    font-size: 80px;
+    font-family: 'Bungee', cursive;
+    margin-bottom: -50px;
+}
+
+.info-section p{
+    font-size: 25px;
+}
+#fightBox{
+    background-image: url("Images/Fight_Screenshot_Gradient.jpg");
+    text-align: left;
+}
+#buyBox{
+    background-image: url("Images/Buy_Screenshot_Gradient.jpg");
+    text-align: right;
+}
+#prepareBox{
+    background-image: url("Images/Prepare_Screenshot_Gradient.jpg");
+    text-align: left;
+}
+#surviveBox{
+    background-image: url("Images/Fight_Screenshot_Gradient.jpg");
+    text-align: right;
+}
+
 
