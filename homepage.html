@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Hairline&family=Bungee+Inline&display=swap" rel="stylesheet">
@@ -10,13 +11,20 @@
     </head>
     <body>
         <div class="site-header">
-            <nav role="navigation" class="nav-header">
+            <nav role="navigation" class="nav-header" id="aboutUsNavBar">
                 <ul class="left-nav">
                     <li tabindex="0"><a href="minigunner.html">Minigunner</a></li>
                     <li tabindex="1"><a href="https://store.steampowered.com/app/1778200/Minigunner/">PLAY NOW</a></li>
                 </ul>
-                
-                <p class="site-title"><a href="homepage.html">Crystal Fruit Games</a></p>
+                <div class="dropdown">
+                    <button onclick="onClickDropdown()"class="dropbtn">Menu</button>
+                    <div class="dropdown-content" id="menuDropdown">
+                        <a href="homepage.html">About Us</a>
+                        <a href="https://youtu.be/CM3GsANqvFM">TRAILER</a>
+                        <a href="https://store.steampowered.com/app/1778200/Minigunner/">PLAY NOW</a>
+                    </div>
+                </div>
+                <p class="site-title"><a href="minigunner.html">CRYSTAL FRUIT GAMES</a></p>
                 <ul class="right-nav">
                     <li><a href="https://discord.gg/7xGuWR2HnU"><img src="Images/Discord Logo.png" class="discord-logo"></a></li>
                     <li><a href="https://youtube.com/@crystalfruitgames8708"><img src="Images/Youtube Logo.png" class="yt-logo"></a></li>

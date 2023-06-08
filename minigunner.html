@@ -2,6 +2,7 @@
 <html>
     <!-- LOOK INTO RESPONSIVE DESIGN!!!! -->
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Hairline&family=Bungee+Inline&display=swap" rel="stylesheet">
@@ -10,14 +11,21 @@
         <title>Minigunner</title>
     </head>
     <body>
-        <div class="site-header">
+        <div>
             <nav role="navigation" class="nav-header">
                 <ul class="left-nav">
                     <li tabindex="0"><a href="homepage.html">About Us</a></li>
                     <li tabindex="1"><a href="https://youtu.be/CM3GsANqvFM">TRAILER</a></li>
                     <li tabindex="2"><a href="https://store.steampowered.com/app/1778200/Minigunner/">PLAY NOW</a></li>
                 </ul>
-                
+                <div class="dropdown">
+                    <button onclick="onClickDropdown()"class="dropbtn">Menu</button>
+                    <div class="dropdown-content" id="menuDropdown">
+                        <a href="homepage.html">About Us</a>
+                        <a href="https://youtu.be/CM3GsANqvFM">TRAILER</a>
+                        <a href="https://store.steampowered.com/app/1778200/Minigunner/">PLAY NOW</a>
+                    </div>
+                </div>
                 <p class="site-title"><a href="minigunner.html">MINIGUNNER</a></p>
                 <ul class="right-nav">
                     <li><a href="https://discord.gg/7xGuWR2HnU"><img src="Images/Discord Logo.png" class="discord-logo"></a></li>
@@ -27,9 +35,11 @@
                 </ul>
             </nav>
         </div>
+        <div class="header-padding"></div>
         <div class="capsule-window">
             <img src="Images/Capsule Full No Logo.png" class="capsule">
-            <img src="Images/MinigunnerLogo.gif" id="logoGif">
+            <div class="capsule-overlay"><img src="Images/MinigunnerLogo.gif" id="logoGif"></div>
+            
             
         </div>
         <div class="summary-box">
@@ -130,5 +140,26 @@
                 </div>
             </div>
         </footer>
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function onClickDropdown() {
+              document.getElementById("menuDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+        </script>
     </body>
 </html>

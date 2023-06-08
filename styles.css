@@ -18,20 +18,10 @@ h1{
     margin-top: 0px;
     font-family: 'Bungee', cursive;
 }
-/* nav.nav-header{
-    width: 100%;
-    max-height: 70px;
-    position: fixed;
-    z-index: 100;
-    background-color: #0091ff;
-   
-    text-align: center;
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-} */
 
+.header-padding{
+    height: 5vh;
+}
 nav.nav-header{
     width: 100%;
     max-height: 80px;
@@ -39,18 +29,20 @@ nav.nav-header{
     z-index: 100;
     background-color: #042959;
    
-    text-align: center;
     
     display: grid;
     grid-template-columns: 30% 40% 30%;
     grid-template-rows: 70px;
+    justify-content: right;
 }
 
 nav.nav-header li{
     display: inline-block;
-    padding-left: 15px;
+    padding-left: 10px;
     user-select:none;
-    font-size: 25px;
+    font-size: 20px;
+
+    line-height: 2em;
 }
 
 
@@ -63,6 +55,9 @@ nav.nav-header li:hover{
 nav.nav-header ul{
     align-self: center;
     color: #80D2F2;
+    /* margin-top: 0%; */
+    padding-left: 0%;
+    /* margin-left: 0px; */
 }
 
 nav.nav-header a{
@@ -81,19 +76,31 @@ nav.nav-header a:hover{
 }
 
 .site-title{
+    text-align: center;
     color: #80D2F2;
     align-self: center;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: bolder;
     margin-bottom: 0px;
     margin-top: 0px;
     font-family: 'Bungee', cursive;
+    line-height: 1em;
+    min-width: 330px;
 }
-
+/* #aboutUsNavBar .site-title{
+    font-size: 20px;
+} */
 .right-nav{
     padding-right: 30px;
     padding-left: 0px;
     padding-top: 20px;
+    display: inline-flex;
+    justify-content: end;
+}
+.right-nav img{
+    max-width: 48px;
+    max-height: 46px;
+    
 }
 .discord-logo{
     width: 48px;
@@ -111,10 +118,58 @@ nav.nav-header a:hover{
     margin: auto;
 }
 
-.steam-embed{
-    margin-left: 25%;
-    
-}
+
+
+/* DROPDOWN */
+/* Dropdown Button */
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 100%;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Bungee', cursive;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #042959;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #80D2F2;}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+
 
 .about-us{
     width: 75%;
@@ -140,13 +195,16 @@ nav.nav-header a:hover{
 
 
 
-
-.capsule{
-    display: inline-block;
+.capsule-window{
+    position: relative;
     width: 100%;
+}
+.capsule{
+    display: block;
+    width: 100%;
+    height: 45%;
     /* transform: translateY(-10%); */
     /* margin-bottom: -8%; */
-    margin:auto;
 }
 
 #logoGif{
@@ -171,7 +229,8 @@ nav.nav-header a:hover{
     background-color: #80D2F2;
     margin: auto;
     margin-top: 50px;
-    max-width: 15%;
+    margin-bottom: 50px;
+    max-width: 230px;
     /* min-width: 15%; */
 }
 .play-now a{
@@ -189,7 +248,6 @@ nav.nav-header a:hover{
     background-image: url("Images/StartMenuSplash1.png");
 
     /* Set a specific height */
-    min-height: 1000px;
     min-width: 285px;
 
     /* Create the parallax scrolling effect */
@@ -203,18 +261,24 @@ nav.nav-header a:hover{
 .summary-box h1{
     text-align: center;
     color: #ffb300;
-    font-size: 80px;
+    font-size: 50px;
     font-family: 'Bungee', cursive;
     text-shadow: -2px -2px 0px white;
+    max-width: 75%;
+    margin:auto;
+    padding-top: 20px;
+    line-height: 1em;
 }
 .summary-box h2{
     text-align: center;
     color: #ffffff;
     text-shadow: -2px -2px 0px rgb(0, 0, 0);
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Bungee', cursive;
     max-width: 75%;
     margin: auto;
+    line-height: 1.5em;
+    padding-top: 30px;
 }
 
 .parallax-box{
@@ -237,7 +301,8 @@ nav.nav-header a:hover{
     display: inline-block;
     margin-left: 5%;
     margin-right: 4%;
-    width: 30%;
+    min-width: 30%;
+    max-width: 600px;
     /* background-color: #0091ff1c; */
     align-content: center;
 }
@@ -371,28 +436,6 @@ nav.nav-header a:hover{
     background-color: #ffb300;
     
 }
-/*
-.play-now-footer{
-    color: #042959;
-    font-size: 60px;
-    font-family: 'Bungee', cursive;
-    border-radius: 25px;
-    background-color: #80D2F2;
-    margin: auto;
-    max-width: 30%;
-    text-align: center;
-    margin-bottom: 50px;
-}
-.play-now-footer a{
-    margin: auto;
-    text-align: center;
-    text-decoration: none;
-}
-.play-now-footer a:visited{
-    text-decoration: none;
-    color:inherit;
-}
-*/
 .site-footer{
     width: 100%;
     height: 70px;
@@ -432,3 +475,41 @@ nav.nav-header a:hover{
 }
 
 
+/* STYLING FOR LARGER SCREENS: */
+
+@media (min-width: 750.02px) {
+    .play-now{
+        
+        min-width: 230px;
+    }
+    /* .summary-box{
+        min-height: 1000px;
+    } */
+    .summary-box h1{
+        font-size: 60px;
+    }
+    .summary-box h2{
+        font-size: 30px;
+        line-height: 2em;
+    }
+    .dropdown{
+        display: none;
+    }
+    .left-nav{
+        display: inline-block;
+    }
+    .right-nav{
+        display: inline-flex;
+    }
+}
+@media (max-width: 750px){
+    .left-nav{
+        display: none;
+    }
+    .right-nav{
+        display: none;
+    }
+    .dropdown{
+        display: block;
+    }
+}
