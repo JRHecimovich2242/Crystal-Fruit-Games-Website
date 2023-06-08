@@ -276,7 +276,7 @@ nav.nav-header a:hover{
 }
 
 
-#featureHeader{
+#featureContainer h1{
     text-align: center;
     font-size: 70px;
     -webkit-text-stroke: 1px white;
@@ -309,9 +309,84 @@ nav.nav-header a:hover{
     border-color: white;
 }
 
+.learn-more-container h1{
+    text-align: center;
+    font-size: 70px;
+    -webkit-text-stroke: 1px white;
+}
 
+.learn-more{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin:auto;
+}
+.learn-more-entry{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 20%; */
+    min-width: 20%;
+    min-height: 100px;
+    border-radius: 25px;
+    
 
+    text-align: center;
+    font-size: 25px;
+    text-shadow: -2px -2px 0px rgb(0, 0, 0);
 
+    background-color: #042959;
+    font-size: 40px;
+    font-family: 'Bungee', cursive;
+}
+.learn-more-entry a{
+    margin-left: 20px;
+    margin-right: 20px;
+    /* margin: auto; */
+    text-decoration: none;
+    color:inherit;
+}
+.learn-more-entry a:hover{
+    text-decoration: none;
+    color:inherit;
+}
+.learn-more-entry a:visited{
+    text-decoration: none;
+    color:inherit;
+}
+
+#learnMoreSteam{
+    background-color: #ffb300;
+    
+}
+/*
+.play-now-footer{
+    color: #042959;
+    font-size: 60px;
+    font-family: 'Bungee', cursive;
+    border-radius: 25px;
+    background-color: #80D2F2;
+    margin: auto;
+    max-width: 30%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.play-now-footer a{
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+}
+.play-now-footer a:visited{
+    text-decoration: none;
+    color:inherit;
+}
+*/
 .site-footer{
     width: 100%;
     height: 70px;
