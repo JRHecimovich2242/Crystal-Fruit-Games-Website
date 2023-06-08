@@ -6,7 +6,16 @@ body{
     font-family: Arial, Helvetica, sans-serif ;
 }
 
-
+h1{
+    
+    color: #80D2F2;
+    align-self: center;
+    font-size: 45px;
+    font-weight: bolder;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-family: 'Bungee', cursive;
+}
 /* nav.nav-header{
     width: 100%;
     max-height: 70px;
@@ -254,25 +263,40 @@ nav.nav-header a:hover{
     background-image: url("Images/Fight_Screenshot_Gradient.jpg");
     text-align: right;
 }
-
+#featureHeader{
+    text-align: center;
+}
 .detailed-info{
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 100px 100px;
-    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
     margin:auto;
 }
 
-.info-block-1{
-    height: 100px;
-    min-height: 100px;
-    background-color: red;
+.detailed-info-item{
+    /* background-color: red; */
+    text-align: center;
+    margin: auto;
+    width: 30%;
+    min-width: 500px;
+    
+    font-size: 25px;
+    text-shadow: -2px -2px 0px rgb(0, 0, 0);
 }
-.info-block-2{
-    min-height: 100px;
-    height: 100px;
-    background-color: blue;
+
+.feature-image{
+    min-width: 265px;
+    min-height: 149px;
+    width: 50%;
+    border-style: solid;
+    border-width: 3px 3px 3px 3px;
+    border-color: white;
 }
+
+
+
+
 .site-footer{
     width: 100%;
     height: 70px;
