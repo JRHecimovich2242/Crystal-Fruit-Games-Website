@@ -263,8 +263,23 @@ nav.nav-header a:hover{
     background-image: url("Images/Fight_Screenshot_Gradient.jpg");
     text-align: right;
 }
+
+/* FEATURES SECTION */
+#featureContainer{
+    background-image: url("Images/ShopBackboard.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Add the blur effect */
+    /* filter: blur(8px);
+    -webkit-filter: blur(8px); */
+}
+
+
 #featureHeader{
     text-align: center;
+    font-size: 70px;
+    -webkit-text-stroke: 1px white;
 }
 .detailed-info{
     display: flex;
