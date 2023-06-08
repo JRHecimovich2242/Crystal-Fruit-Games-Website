@@ -4,6 +4,8 @@ body{
     background-color: #262626;
     color: #E9E9EA;
     font-family: Arial, Helvetica, sans-serif ;
+    min-height: 100vh;
+    position: relative;
 }
 
 h1{
@@ -117,6 +119,7 @@ nav.nav-header a:hover{
 .about-us{
     width: 75%;
     margin:auto;
+    padding-top: 60px;
     align-self: center;
     text-align: center;
     font-size: 30px;
@@ -125,12 +128,15 @@ nav.nav-header a:hover{
 .about-us h1{
     color: #0091ff;
     font-size: 60px;
-    font-family: 'Bungee Hairline', cursive;
+    font-family: 'Bungee', cursive;
     padding: auto;
     
 }
 
-
+.about-us img{
+    max-height: 20%;
+    max-width: 20%;
+}
 
 
 
@@ -413,6 +419,16 @@ nav.nav-header a:hover{
 #footerLogoIcon{  
     height: 100px;
     width: 100px;
+}
+
+#learnMoreHomepage{
+    scale: 75%;
+}
+
+#cfgPageFooter{
+    position:absolute;
+    bottom:0px;
+    margin: auto;
 }
 
 
