@@ -519,6 +519,7 @@ nav.nav-header a:hover{
     }
     html, body {
         overflow-x: hidden;
+        overscroll-behavior-x: none;
       }
 
     .parallax-box{
