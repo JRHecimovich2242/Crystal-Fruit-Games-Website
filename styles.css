@@ -477,7 +477,7 @@ nav.nav-header a:hover{
 
 /* STYLING FOR LARGER SCREENS: */
 
-@media (min-width: 750.02px) {
+@media (min-width: 850.02px) {
     .play-now{
         
         min-width: 230px;
@@ -502,7 +502,7 @@ nav.nav-header a:hover{
         display: inline-flex;
     }
 }
-@media (max-width: 750px){
+@media (max-width: 850px){
     .left-nav{
         display: none;
     }
