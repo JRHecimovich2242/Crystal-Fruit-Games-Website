@@ -1,10 +1,12 @@
 
+
 body{
     margin: 0;
     background-color: #262626;
     color: #E9E9EA;
     font-family: Arial, Helvetica, sans-serif ;
     min-height: 100vh;
+    min-width: 100vh;
     position: relative;
 }
 
@@ -311,10 +313,13 @@ nav.nav-header a:hover{
     color: #ffb300;
     font-size: 80px;
     font-family: 'Bungee', cursive;
+    margin-top: 30px;
     margin-bottom: -50px;
+    line-height: 1em;
 }
 
 .info-section p{
+    margin-top: 15%;
     font-size: 25px;
     text-shadow: -2px -2px 0px rgb(0, 0, 0);
 }
@@ -502,7 +507,7 @@ nav.nav-header a:hover{
         display: inline-flex;
     }
 }
-@media (max-width: 850px){
+@media screen and (max-width: 850px){
     .left-nav{
         display: none;
     }
@@ -511,5 +516,12 @@ nav.nav-header a:hover{
     }
     .dropdown{
         display: block;
+    }
+    html, body {
+        overflow-x: hidden;
+      }
+
+    .parallax-box{
+        background-attachment: scroll;
     }
 }
